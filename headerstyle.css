@@ -57,7 +57,6 @@
 	cursor: pointer;
 	border-radius: 5px;
 	margin-left: 50px;
-	margin-right: 50px;
 	font-family: Arial, sans-serif;
 }
 
@@ -74,10 +73,23 @@
 	border-radius: 5px;
 	z-index: 10;
 	top:40px;
+	left:100px;
 }
 
 .hover-trigger1:hover + .hover-box1 {
 	display: block;
+}
+
+.hover-box1:hover {
+	display:block;
+}
+
+.hover-box1 ul {
+	text-align: left;
+}
+
+.hover-box1 li:hover {
+	color: green;
 }
 
 .hover-trigger2 {
@@ -85,7 +97,7 @@
 	color: gray;
 	cursor: pointer;
 	border-radius: 5px;
-	margin-right: 50px;
+	margin-left: 50px;
 	font-family: Arial, sans-serif;
 }
 
@@ -102,22 +114,53 @@
 	border-radius: 5px;
 	z-index: 10;
 	top:40px;
+	left:250px;
 }
 
 .hover-trigger2:hover + .hover-box2 {
 	display: block;
 }
 
-.hover-box1:hover {
+.hover-box2:hover {
 	display:block;
 }
 
-.hover-box1 ul {
+.hover-box2 ul {
 	text-align: left;
 }
 
-.hover-box1 li:hover {
+.hover-box2 li:hover {
 	color: green;
+}
+
+.hover-trigger3 a {
+	text-decoration: none;
+	color: gray;
+	margin-left:50px;
+}
+
+.hover-trigger4 a {
+	text-decoration: none;
+	color: gray;
+	margin-left:50px;
+}
+
+.hover-trigger5 a {
+	text-decoration: none;
+	color: gray;
+	margin-left:50px;
+}
+
+.hover-trigger6 a {
+	text-decoration: none;
+	color: gray;
+	margin-left:50px;
+}
+
+.hover-trigger7 a {
+	text-decoration: none;
+	color: gray;
+	margin-left:50px;
 }
 
 body {
