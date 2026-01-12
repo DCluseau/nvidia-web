@@ -15,11 +15,8 @@ h2,h1,.liens_rapides.div,a{
     width: 426px;
     height: 250px;
     padding: 15px, 0px ;
+}
 
-}
-.liens_rapides.img{
-    height: 400px;
-}
 .img_link {
     padding: 15px;
 }
@@ -28,9 +25,10 @@ p{
 font-size: 15px;
 text-align: center;
 padding: 10px;
+padding-bottom: 50px;
 
 }
-.green_title {
+.green_title, .info_bottom.section.ul.li {
     color: #76B900;
 }
 
@@ -39,6 +37,28 @@ padding: 10px;
 display: flex;
 margin-left: 200px;
 margin-right: 200px;
+border-bottom: 1px rgb(182, 176, 176) solid;
 
 }
 
+.assistance_geforce {
+    margin-bottom: 150px;
+}
+
+/* INFO BOTTOM */
+
+.info_bottom {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+
+}
+.section {
+    width: 426px;
+    background-color: rgb(96, 102, 107);
+    margin-right: 20px;
+}
+.section.h3 {
+    border-bottom: #76B900 solid 1px;
+}
