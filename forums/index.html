@@ -7,10 +7,8 @@
     <title>NVIDIA GeForce Forums</title>
   </head>
   <body>
-    <div
-      class="max-h-[44px] bg-[#fff] flex w-full justify-between items-center"
-    >
-      <a href="#" class="px-20 py-12">
+    <div class="max-h-[44px] bg-[#fff] flex w-full justify-start items-center">
+      <a href="#" class="px-[20px] py-[12px] w-auto h-full">
         <svg
           viewBox="0 0 974.7 179.7"
           enable-background="new 0 0 974.7 179.7"
@@ -42,20 +40,20 @@
     <div class="bg-[#1a1a1a]">
       <div class="w-[225px] h-svh bg-[#1a1a1a] text-white">
         <div
-          class="w-[225px] h-[66px] text-[20px] font-sans py-[18px] px-[21px]"
+          class="w-[225px] h-[66px] text-[21px] font-sans py-[18px] px-[22px] border-[1px] border-[#000]"
         >
           <span class="font-bold">GeForce</span> Forums
         </div>
-        <ul class="py-4 w-full">
+        <ul class="py-6 w-full flex flex-wrap gap-2">
           <li
             class="active flex items-center justify-start gap-4 text-[24px] cursor-pointer"
           >
-            <div class="w-[3px] bg-[#76B900] h-[30px] rounded-2xl"></div>
-            <div class="bg-black bg-[#000] p-2 rounded-3xl">
+            <div class="w-[5px] bg-[#76B900] h-[22px]"></div>
+            <div class="bg-black bg-[#000] p-[6px] rounded-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
+                width=".8em"
+                height=".8em"
                 viewBox="0 0 512 512"
               >
                 <path
@@ -67,17 +65,23 @@
             <span class="text-[16px] font-bold">Discover</span>
           </li>
           <li
-            class="active flex items-center justify-start gap-4 text-[24px] cursor-pointer"
+            class="active flex items-center justify-start gap-4 text-[24px] cursor-pointer group"
           >
-            <div class="w-[3px] hover:bg-[#76B900] h-[30px] rounded-2xl"></div>
-            <div class="bg-black bg-[#000] p-2 rounded-3xl">
+            <div class="w-[3px] h-[30px] rounded-2xl"></div>
+            <div class="bg-black bg-[#000] p-[6px] rounded-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
+                class="group-hover:stroke-white"
               >
-                <g fill="none" stroke="currentColor" stroke-width="2">
+                <g
+                  fill="none"
+                  stroke="#909090"
+                  stroke-width="2"
+                  class="group-hover:stroke-white"
+                >
                   <circle cx="12" cy="12" r="7" />
                   <circle cx="12" cy="12" r="2" fill="currentColor" />
                   <path
@@ -87,15 +91,16 @@
                 </g>
               </svg>
             </div>
-            <span class="text-[16px] font-bold text-[#909090] font-thin"
+            <span
+              class="text-[16px] font-bold text-[#909090] font-light group-hover:text-white"
               >Community Support</span
             >
           </li>
           <li
-            class="active flex items-center justify-start gap-4 text-[24px] cursor-pointer"
+            class="active flex items-center justify-start gap-4 text-[24px] cursor-pointer group"
           >
-            <div class="w-[3px] hover:bg-[#76B900] h-[30px] rounded-2xl"></div>
-            <div class="bg-black bg-[#000] p-2 rounded-3xl">
+            <div class="w-[3px] h-[30px] rounded-2xl"></div>
+            <div class="bg-black bg-[#000] p-[6px] rounded-3xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -105,11 +110,81 @@
                 <path
                   fill="currentColor"
                   d="M9.459 9.33V8.142c.122-.012.232-.012.355-.012c3.27-.098 5.413 2.817 5.413 2.817s-2.315 3.197-4.8 3.197c-.332 0-.65-.05-.968-.16v-3.613c1.273.16 1.53.71 2.29 1.984l1.702-1.433s-1.249-1.628-3.331-1.628q-.33 0-.661.036m0-3.943v1.776l.355-.025c4.544-.16 7.508 3.723 7.508 3.723s-3.405 4.152-6.945 4.152a4.7 4.7 0 0 1-.918-.086v1.103c.245.024.502.049.759.049c3.295 0 5.683-1.69 7.998-3.674c.38.306 1.947 1.053 2.278 1.371c-2.193 1.837-7.312 3.32-10.215 3.32a6 6 0 0 1-.808-.05v1.568H22V5.387zm0 8.61v.943c-3.05-.551-3.895-3.723-3.895-3.723S7.034 9.6 9.459 9.33v1.03h-.013c-1.273-.16-2.278 1.04-2.278 1.04s.576 2.009 2.29 2.597m-5.414-2.915s1.8-2.67 5.414-2.94v-.967C5.454 7.493 2 10.874 2 10.874s1.96 5.67 7.459 6.184V16.03c-4.042-.502-5.414-4.948-5.414-4.948"
+                  class="fill-[#909090] group-hover:fill-white"
                 />
               </svg>
             </div>
-            <span class="text-[16px] font-bold text-[#909090] font-thin"
+            <span
+              class="text-[16px] font-bold text-[#909090] font-light group-hover:text-white"
               >NVIDIA Support</span
+            >
+          </li>
+        </ul>
+        <ul
+          class="flex items-center justify-center text-[18px] font-regular flex-wrap text-[#909090] px-5 gap-2"
+        >
+          <li>
+            <span class="px-[20px] -ml-10 -mt-2 text-white"
+              >Top Communities</span
+            >
+          </li>
+          <li class="w-full inline-flex items-center">
+            <div class="h-10 w-10 mr-4">
+              <img
+                src="assets/ggc.jpg"
+                alt="ggc"
+                class="w-full h-full border-[2px] border-[#76B900] rounded-md"
+              />
+            </div>
+
+            <span class="font-light text-base flex flex-1"
+              >GeForce Graphics Cards</span
+            >
+          </li>
+          <li class="w-full inline-flex items-center">
+            <div class="h-10 w-10 mr-4">
+              <img
+                src="assets/gl.jpg"
+                alt="gl"
+                class="w-full h-full border-[2px] border-[#76B900] rounded-md"
+              />
+            </div>
+            <span class="font-light text-base flex flex-1"
+              >GeForce Laptops</span
+            >
+          </li>
+          <li class="w-full inline-flex">
+            <div class="h-10 w-10 mr-4">
+              <img
+                src="assets/st.jpg"
+                alt="st"
+                class="w-full h-full border-[2px] border-[#76B900] rounded-md"
+              />
+            </div>
+            <span class="font-light text-base flex flex-1">SHIELD TV</span>
+          </li>
+          <li class="w-full inline-flex">
+            <div class="h-10 w-10 mr-4">
+              <img
+                src="assets/grd.jpg"
+                alt="st"
+                class="w-full h-full border-[2px] border-[#76B900] rounded-md"
+              />
+            </div>
+            <span class="font-light text-base flex flex-1"
+              >Game Ready Drivers</span
+            >
+          </li>
+          <li class="w-full inline-flex">
+            <div class="h-10 w-10 mr-4">
+              <img
+                src="assets/gfn.jpg"
+                alt="st"
+                class="w-full h-full border-[2px] border-[#76B900] rounded-md"
+              />
+            </div>
+            <span class="font-light text-base flex flex-1"
+              >GFN - Annoucement</span
             >
           </li>
         </ul>
