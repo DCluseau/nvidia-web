@@ -1,0 +1,31 @@
+body{
+	font-family: "Arial";
+	color: #1a1a1a;
+}
+.body-page{
+	overflow: hidden auto;
+}
+#titles{
+	margin:auto;
+	width:75%;
+}
+h1{
+	font-size: 32pt;
+	text-align: center;
+}
+.chapeau{
+	font-size: 16pt;
+	text-align: center;
+}
+#columns{
+	margin:auto;
+	width: 50%;
+
+	display:grid;
+	grid-template-columns: auto auto;
+}
+.inner-column{
+	padding: 5%;
+	margin: auto;
+	box-shadow: 1px 1px 10px 1px lightgrey;
+}
