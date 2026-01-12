@@ -19,11 +19,39 @@
 			text-decoration: none;
 		}
 		nav a:hover {
-		&text-decoration: underline;
+			font-weight: bold;
 		}
 		main {
 			background-color: black;
 			color: white;
+		}
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+		
+		li {
+			padding: 0 10px;
+			position: relative;
+		}
+		
+		li:not(:last-child)::after {
+			content: "|";
+			position: absolute;
+			right: 0;
+			color: black;
+		}
+		
+		ul a {
+			color: inherit;
+			text-decoration: none;
+		}
+		
+		ul a:hover {
+			font-weight: bold;
 		}
 	</style>
 </head>
@@ -41,6 +69,22 @@
 <main>
 	<p>Welcome to my website!</p>
 </main>
+
+<footer>
+	<h2>NVIDIA</h2>
+	<ul>
+		<li><a href="https://www.nvidia.com/en-us/about-nvidia/privacy-policy/">Privacy Policy</a></li>
+		<li><a href="https://www.nvidia.com/en-us/about-nvidia/privacy-center/">Your Privacy Choices</a></li>
+		<li><a href="https://www.nvidia.com/en-us/about-nvidia/terms-of-service/">Terms of Service</a></li>
+		<li><a href="https://www.nvidia.com/en-us/about-nvidia/accessibility/">Accessibility</a></li>
+		<li><a href="https://www.nvidia.com/en-us/about-nvidia/company-policies/">Corporate Policy</a></li>
+		<li><a href="https://www.nvidia.com/en-us/product-security/">Product Security</a></li>
+		<li><a href="https://www.nvidia.com/en-us/contact/">Contact</a></li>
+	</ul>
+	<div>
+		<sub>Copyright</sub>
+	</div>
+</footer>
 
 </body>
 </html>
