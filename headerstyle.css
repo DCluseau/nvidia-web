@@ -10,21 +10,6 @@
 	flex-wrap: nowrap;
 }
 
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: black;
-	color: white;
-	padding: 10px 16px;
-	position: sticky;
-	text-align: center;
-	font-size: 1.0em;
-	top: 0;
-	z-index: 1000;
-	height: 35px;
-}
-
 .main-header ul {
 	display: flex;
 	list-style: none;
@@ -46,6 +31,93 @@
 
 .main-header li a:hover {
 	font-weight: bold;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	color: white;
+	padding: 10px 16px;
+	position: sticky;
+	text-align: center;
+	font-size: 1.0em;
+	top: 0;
+	z-index: 1000;
+	height: 35px;
+}
+
+.header {
+	position: relative;
+}
+
+.hover-trigger1 {
+	padding: 10px 20px;
+	color: gray;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: Arial, sans-serif;
+}
+
+.hover-box1 {
+	display: none; /* Hidden by default */
+	position: absolute;
+	top: 110%; /* Below the trigger */
+	background-color: white;
+	color: gray;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 200px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	z-index: 10;
+	top:40px;
+}
+
+.hover-trigger1:hover + .hover-box1 {
+	display: block;
+}
+
+.hover-trigger2 {
+	padding: 10px 20px;
+	color: gray;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-right: 50px;
+	font-family: Arial, sans-serif;
+}
+
+.hover-box2 {
+	display: none; /* Hidden by default */
+	position: absolute;
+	top: 110%; /* Below the trigger */
+	background-color: white;
+	color: gray;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 200px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	z-index: 10;
+	top:40px;
+}
+
+.hover-trigger2:hover + .hover-box2 {
+	display: block;
+}
+
+.hover-box1:hover {
+	display:block;
+}
+
+.hover-box1 ul {
+	text-align: left;
+}
+
+.hover-box1 li:hover {
+	color: green;
 }
 
 body {
