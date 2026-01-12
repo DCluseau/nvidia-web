@@ -28,7 +28,7 @@ padding: 10px;
 padding-bottom: 50px;
 
 }
-.green_title, .info_bottom.section.ul.li {
+.green_title, .section li {
     color: #76B900;
 }
 
@@ -56,9 +56,26 @@ border-bottom: 1px rgb(182, 176, 176) solid;
 }
 .section {
     width: 426px;
-    background-color: rgb(96, 102, 107);
+    /* background-color: rgb(96, 102, 107); */
     margin-right: 20px;
 }
-.section.h3 {
-    border-bottom: #76B900 solid 1px;
+.section li {
+    list-style-type: none;
+    padding: 5px;
+    margin-left: -40px;
+
+}
+.section_title {
+    border-bottom: #acadab solid 1px;
+}
+.section a {
+    border-radius: 25px;
+    background-color: #76B900;
+}
+
+/* FOLLOW GEFORCE */
+
+.follow_geforce h4 {
+display: flex;
+background-color: red;
 }
