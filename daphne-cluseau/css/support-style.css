@@ -9,13 +9,15 @@ body{
 	margin:auto;
 	width:75%;
 }
-h1{
+.h1{
 	font-size: 32pt;
+	font-weight: bold;
 	text-align: center;
 }
 .chapeau{
 	font-size: 16pt;
 	text-align: center;
+	clear:both;
 }
 #columns{
 	margin:auto;
@@ -47,4 +49,42 @@ ul.products{
 .columns-footer{
 	font-weight: bold;
 	font-size: 14pt;
+}
+#form-lang{
+	float:right;
+	display:inline;
+	text-align: right;
+	position:relative;
+
+}
+#form-lang select{
+	background-color: #ffffff;
+	padding: 10px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-width: thin;
+	bottom:0px;
+	font-size: 11pt;
+	/*color: #5a5a5a;*/
+	font-weight: lighter;
+	width: 125px;
+}
+
+#form-lang select{
+	background-color: #ffffff;
+	padding: 10px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-width: thin;
+	bottom:0px;
+	font-size: 11pt;
+	font-weight: lighter;
+	width: 125px;
+}
+#form-lang select option span a:focus{
+	color: #ffffff;
+}
+
+#form-lang select:focus{
+	border-color: #76B900;
 }
