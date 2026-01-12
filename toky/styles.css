@@ -1,0 +1,44 @@
+body{
+    background-color:black;
+    color: aliceblue;
+    font-family: NVIDIA-EMEA, Arial, Helvetica, Sans-Serif;;
+}
+
+h2,h1,.liens_rapides.div,a{
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+  font-size: 36px;
+
+}
+.liens_rapides.div{
+    width: 426px;
+    height: 250px;
+    padding: 15px, 0px ;
+
+}
+.liens_rapides.img{
+    height: 400px;
+}
+.img_link {
+    padding: 15px;
+}
+
+p{
+font-size: 15px;
+text-align: center;
+padding: 10px;
+
+}
+.green_title {
+    color: #76B900;
+}
+
+
+.liens_rapides {
+display: flex;
+margin-left: 200px;
+margin-right: 200px;
+
+}
+
