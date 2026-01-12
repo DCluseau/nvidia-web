@@ -1,0 +1,47 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #FFF;
+	color: black;
+	padding: 00px;
+}
+
+.headerlinks {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: nowrap;
+}
+
+.headerlinks h2 {
+	margin: 0;
+	white-space; nowrap;
+}
+
+.headerlinks ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 0.5rem;
+}
+
+.headerlinks li {
+	white-space: nowrap;
+}
+
+.headerlinks li a {
+	color: black;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.headerlinks li a:hover {
+	font-weight: bold;
+}
+
+main {
+	background-color: black;
+	color: white;
+}
