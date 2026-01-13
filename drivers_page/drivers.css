@@ -23,35 +23,7 @@ body {
 }
 
 /* Bloc de nagivation principal */
-.main_menu {
-  display: flex;
-  background-color: white;
-  color: black;
-}
-
-.nav_menu ul {
-  display: flex;
-}
-
-.nav_menu ul li {
-  display: flex;
-  padding: 5px;
-}
-
 /* Bloc de nagivation de la page */
-.geforce_menu {
-  display: flex;
-}
-
-.nav_geforce_menu ul {
-  display: flex;
-}
-
-.nav_geforce_menu ul li {
-  display: flex;
-  margin: 10px;
-}
-
 /* Titre de la page */
 .page_title {
   display: flex;
@@ -139,14 +111,6 @@ body {
 }
 
   /* Pied de page principal */
-.main_footer {
-  display: flex;
-  padding: 10px;
-}
-
-.main_footer p {
-  margin: 15px;
-}
 
 
 
