@@ -1,0 +1,27 @@
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+li {
+	padding: 0 10px;
+	position: relative;
+}
+
+li:not(:last-child)::after {
+	content: "|";
+	position: absolute;
+	right: 0;
+	color: black;
+}
+
+ul a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul a:hover {
+	font-weight: bold;
+}
