@@ -46,10 +46,20 @@ ul.products{
 	text-underline-offset: 4px;
 	font-size: 11pt;
 }
+
 .columns-footer{
 	font-weight: bold;
 	font-size: 14pt;
 }
+
+.link-column-footer{
+	text-decoration: none;
+	color: black;
+}
+span .arrow{
+	color: #76B900;
+}
+
 #form-lang{
 	float:right;
 	display:inline;
@@ -70,21 +80,7 @@ ul.products{
 	width: 125px;
 }
 
-#form-lang select{
-	background-color: #ffffff;
-	padding: 10px;
-	border-color: lightgrey;
-	border-style: solid;
-	border-width: thin;
-	bottom:0px;
-	font-size: 11pt;
-	font-weight: lighter;
-	width: 125px;
-}
-#form-lang select option span a:focus{
-	color: #ffffff;
-}
-
 #form-lang select:focus{
 	border-color: #76B900;
 }
+
