@@ -62,8 +62,6 @@
 
 .hover-box1 {
 	display: none; /* Hidden by default */
-	position: absolute;
-	top: 110%; /* Below the trigger */
 	background-color: white;
 	color: gray;
 	border: 1px solid #ccc;
@@ -72,8 +70,7 @@
 	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 	border-radius: 5px;
 	z-index: 10;
-	top:40px;
-	left:100px;
+	position: relative;
 }
 
 .hover-trigger1:hover + .hover-box1 {
@@ -133,31 +130,7 @@
 	color: green;
 }
 
-.hover-trigger3 a {
-	text-decoration: none;
-	color: gray;
-	margin-left:50px;
-}
-
-.hover-trigger4 a {
-	text-decoration: none;
-	color: gray;
-	margin-left:50px;
-}
-
-.hover-trigger5 a {
-	text-decoration: none;
-	color: gray;
-	margin-left:50px;
-}
-
-.hover-trigger6 a {
-	text-decoration: none;
-	color: gray;
-	margin-left:50px;
-}
-
-.hover-trigger7 a {
+.header div:nth-child(n+3) a {
 	text-decoration: none;
 	color: gray;
 	margin-left:50px;
