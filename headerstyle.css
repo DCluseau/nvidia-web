@@ -1,0 +1,142 @@
+.main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f1f1f1;
+	padding: 5px;
+	text-align: center;
+	color: black;
+	gap: 1rem;
+	flex-wrap: nowrap;
+}
+
+.main-header ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 0.5rem;
+	line-height: 2em;
+}
+
+.main-header li {
+	white-space: nowrap;
+}
+
+.main-header li a {
+	color: black;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.main-header li a:hover {
+	font-weight: bold;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	color: white;
+	padding: 10px 16px;
+	position: sticky;
+	text-align: center;
+	font-size: 1.0em;
+	top: 0;
+	z-index: 1000;
+	height: 35px;
+}
+
+.header {
+	position: relative;
+}
+
+.hover-trigger1 {
+	padding: 10px 20px;
+	color: gray;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-left: 50px;
+	font-family: Arial, sans-serif;
+}
+
+.hover-box1 {
+	display: none; /* Hidden by default */
+	background-color: white;
+	color: gray;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 200px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	z-index: 10;
+	position: relative;
+}
+
+.hover-trigger1:hover + .hover-box1 {
+	display: block;
+}
+
+.hover-box1:hover {
+	display:block;
+}
+
+.hover-box1 ul {
+	text-align: left;
+}
+
+.hover-box1 li:hover {
+	color: green;
+}
+
+.hover-trigger2 {
+	padding: 10px 20px;
+	color: gray;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-left: 50px;
+	font-family: Arial, sans-serif;
+}
+
+.hover-box2 {
+	display: none; /* Hidden by default */
+	position: absolute;
+	top: 110%; /* Below the trigger */
+	background-color: white;
+	color: gray;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 200px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	z-index: 10;
+	top:40px;
+	left:250px;
+}
+
+.hover-trigger2:hover + .hover-box2 {
+	display: block;
+}
+
+.hover-box2:hover {
+	display:block;
+}
+
+.hover-box2 ul {
+	text-align: left;
+}
+
+.hover-box2 li:hover {
+	color: green;
+}
+
+.header div:nth-child(n+3) a {
+	text-decoration: none;
+	color: gray;
+	margin-left:50px;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
