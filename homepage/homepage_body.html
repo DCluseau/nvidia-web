@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homepage_styles.css">
+    <link rel="stylesheet" href="../headerstyle.css">
 <title>Title of the document</title>
 </head>
 
 <body>
-    
+<!-- TEST HEADER -->
+ 
+<div id="header"></div>
+
+<script>
+    fetch("../Header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+</script>
+
+
+
 <div class="assistance_geforce">
     <h1>Assistance GeForce</h1>
     <h2 class="green_title">LIENS RAPIDES</h2>
     <div class="liens_rapides">
         <div>
             <div class="img_link">
-                <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><img src="/Nouveau dossier/nvidia-web/homepage/img/driver.jpeg" alt=""width="120" height="120"></a>
-                <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><h2>Pilotes</h2></a>
+                <a href="../drivers_page/drivers.html"><img src="./img/driver.jpeg" alt=""width="120" height="120"></a>
+                <a href="../drivers_page/drivers.html"><h2>Pilotes</h2></a>
             </div>
 
             <ul class="toto">
@@ -27,7 +41,7 @@
         </div>
         <div>
             <div class="img_link">
-                <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><img src="/Nouveau dossier/nvidia-web/homepage/img/forum.jpeg" alt=""width="120" height="120"></a>
+                <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><img src="./img/forum.jpeg" alt=""width="120" height="120"></a>
                 <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><h2>Forums</h2></a>
             </div>
 
@@ -37,7 +51,7 @@
         </div>
         <div>
             <div class="img_link">
-            <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><img src="/Nouveau dossier/nvidia-web/homepage/img/support.jpeg" alt=""width="120" height="120"></a>
+            <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><img src="./img/support.jpeg" alt=""width="120" height="120"></a>
             <a href="https://www.nvidia.com/fr-fr/geforce/drivers/"><h2>Support Technique</h2></a>
             </div>
             
