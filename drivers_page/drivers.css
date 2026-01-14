@@ -1,0 +1,124 @@
+/* Sommaire */
+
+  /* Bloc de nagivation principal */
+  /* Bloc de nagivation de la page */
+  /* Titre de la page */
+  /* Partie principal de la page */
+    /* Bloc de publicité */
+    /* Section Drivers */
+      /* Section Auto Update */
+      /* Section Scearch Manuel */
+    /* Section des résultats de la recherche manuelles */
+    /* Section d'aide et de ressources drivers */
+      /* Section d'aide - Driver Forum */
+      /* Section de ressources drivers */
+    /* Pied de page pour la page actuelle */
+    /* Pied de page principal */
+
+
+/* CSS */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Bloc de nagivation principal */
+/* Bloc de nagivation de la page */
+/* Titre de la page */
+.page_title {
+  display: flex;
+  width: 1280px;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Partie principal de la page */
+.page_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+
+  /* Bloc de publicité */
+.column_left_body {
+  display: block;
+  width: 400px;
+}
+
+  /* Section Drivers */
+.column_right_body {
+  display: block;
+  width: 700px;
+}
+
+    /* Section Auto Update */
+    /* Section Scearch Manuel */
+
+  /* Section des résultats de la recherche manuelles */
+.page_result_scearch {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  flex-direction: column;
+  margin: auto;
+}
+
+.page_result_scearch h2 {
+  margin-left: auto;
+  margin-right: auto
+}
+
+  /* Section d'aide et de ressources drivers */
+.page_sub_body {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+
+    /* Section d'aide - Driver Forum */
+.column_left_sub {
+  width: 400px;
+}
+
+    /* Section de ressources drivers */
+.column_right_sub {
+  width: 700px;
+}
+
+  /* Pied de page pour la page actuelle */
+.page_footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+.column_left {
+  padding: 15px;
+  margin: auto;
+}
+
+.column_center {
+  padding: 15px;
+  margin: auto;
+}
+
+.column_right {
+  padding: 15px;
+  margin: auto;
+}
+
+  /* Pied de page principal */
+
+
+
+
+
+
+
+
+
+
+

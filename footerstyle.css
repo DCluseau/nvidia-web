@@ -25,3 +25,8 @@ ul a {
 ul a:hover {
 	font-weight: bold;
 }
+
+footer {
+  background-color: white;
+  color: color;
+}

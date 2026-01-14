@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Official GeForce Drivers | NVIDIA</title>
+        <link rel="canonical" href="https://www.nvidia.com/en-us/geforce/drivers/">
+        <link rel="stylesheet" href="drivers.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- Bloc de nagivation principal -->
+        <header>
+            <iframe src="../Header.html" frameborder="0" width="100%" height="100px" allowfullscreen="true" scrolling="no"></iframe>
+        </header>    
+
+        <!-- Titre de la page -->
+        <div class="page_title">
+            <h1>GeForce® Drivers</h1>
+        </div>
+
+        <!-- Partie principal de la page -->
+        <div class="page_body">
+            <!-- Bloc de publicité -->
+            <div class="column_left_body">
+                <a href="https://www.nvidia.com/en-us/geforce/news/ces-2026-nvidia-geforce-rtx-announcements/?nvid=nv-int-gfltnv-424094">
+                    <img src="C:\Users\VitryA\Desktop\Documents\Cours_Web\14-DEV-WEB-001 Web\2-exercices\2-Depot\nvidia-web\ressources\pub_1.jpg" alt="">
+                </a>
+                <a href="https://www.nvidia.com/en-us/geforce/news/ces-2026-nvidia-geforce-rtx-announcements/?nvid=nv-int-gfltnv-424094">
+                    <img src="C:\Users\VitryA\Desktop\Documents\Cours_Web\14-DEV-WEB-001 Web\2-exercices\2-Depot\nvidia-web\ressources\pub_2.jpg" alt="">
+                </a>
+                <a href="https://www.nvidia.com/en-us/geforce/news/ces-2026-nvidia-geforce-rtx-announcements/?nvid=nv-int-gfltnv-424094">
+                    <img src="C:\Users\VitryA\Desktop\Documents\Cours_Web\14-DEV-WEB-001 Web\2-exercices\2-Depot\nvidia-web\ressources\pub_3.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Section Drivers -->
+            <div class="column_right_body">
+                <!-- Section Auto Update -->
+                <div class="section_auto_update">
+                    <h2>Automatic Driver Updates</h2>
+                    <p>The NVIDIA App is the essential companion for PC gamers and creators. 
+                    Keep your PC up to date with the latest NVIDIA drivers and technology.</p>
+                    <!-- Bouton Download Now -->
+                    <button class="download_now" type="button"><a href="https://www.nvidia.com/en-us/software/nvidia-app/"><p>Download Now</p></a></button>
+                </div>
+                
+                <!-- Section Scearch Manuel -->
+                <div class="section_manuel_search">
+                    <h2>Manual Driver Search</h2>
+                    <p>Search all GeForce drivers by providing your system information.</p>
+                    <p>Product Type:</p>
+                    <!-- List - Product Type -->
+                    <select id="product_type">
+                        <option value="valeur1" selected>GeForce</option>
+                        <option value="valeur2">TITAN</option>
+                        <option value="valeur3">ION</option>
+                        <option value="valeur4">Legacy</option>
+                        <option value="valeur5">3D Vision</option>
+                    </select>
+                    <p>Product Series:</p>
+                    <!-- List - Product Series -->
+                    <select id="product_series">
+                        <option value="valeur1" selected>GeForce RTX 50 Series (Notebooks)</option>
+                        <option value="valeur2">GeForce RTX 50 Series</option>
+                        <option value="valeur3">GeForce RTX 40 Series (Notebooks)</option>
+                        <option value="valeur4">GeForce RTX 40 Series</option>
+                        <option value="valeur5">GeForce RTX 30 Series (Notebooks)</option>
+                        <option value="valeur6">GeForce RTX 30 Series</option>
+                        <option value="valeur7">GeForce RTX 20 Series (Notebooks)</option>
+                        <option value="valeur8">GeForce RTX 20 Series</option>
+                    </select>
+                    <p>Product:</p>
+                    <!-- List - Product -->
+                    <select id="product">
+                        <option value="valeur1" selected>GeForce RTX 5090 Laptop GPU</option>
+                        <option value="valeur2">GeForce RTX 5080 Laptop GPU</option>
+                        <option value="valeur3">GeForce RTX 5070 Ti Laptop GPU</option>
+                        <option value="valeur4">GeForce RTX 5070 Laptop GPU</option>
+                        <option value="valeur5">GeForce RTX 5060 Laptop GPU</option>
+                        <option value="valeur6">GeForce RTX 5050 Laptop GPU</option>
+                    </select>
+                    <p>Operating System:</p>
+                    <!-- List - Operating System -->
+                    <select id="operating_system">
+                        <option value="valeur1" selected>Windows 10 64-Bit</option>
+                        <option value="valeur2">Windows 11</option>
+                        <option value="valeur3">Linux Aarch 64</option>
+                        <option value="valeur4">Linux 64-Bit</option>
+                        <option value="valeur5">FreeBSD X64</option>
+                    </select>
+                    <p>Language:</p>
+                    <!-- List - Language -->
+                    <select id="language">
+                        <option value="valeur1" selected>English (US)</option>
+                        <option value="valeur2">Français</option>
+                        <option value="valeur3">Japanese</option>
+                    </select>
+                    <p>Download Type:</p>
+                    <!-- List - Download Type -->
+                    <select id="download_type">
+                        <option value="valeur1" selected>All</option>
+                        <option value="valeur2">Game Ready Driver</option>
+                        <option value="valeur3">Studio Driver</option>
+                    </select>
+                    <!-- Bouton Start Search -->
+                    <button class="start_search" type="button">Start Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section des résultats de la recherche manuelles -->
+        <div class="page_result_scearch">
+            <h2>Driver Results</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3>NVIDIA Studio Driver - WHQL</h3>
+                        <p>Driver Version: 591.74 - Release Date: Mon Jan 05, 2026</p>
+                        <button class="start_search" type="button">Get Download</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>GeForce Game Ready Driver - WHQL</h3>
+                        <p>Driver Version: 591.74 - Release Date: Mon Jan 05, 2026</p>
+                        <button class="start_search" type="button">Get Download</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>GeForce Game Ready Driver - WHQL</h3>
+                        <p>Driver Version: 591.74 - Release Date: Mon Jan 05, 2026</p>
+                        <button class="start_search" type="button">Get Download</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>GeForce Game Ready Driver - WHQL</h3>
+                        <p>Driver Version: 591.44 - Release Date: Thu Dec 04, 2025</p>
+                        <button class="start_search" type="button">Get Download</button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>NVIDIA Studio Driver - WHQL</h3>
+                        <p>Driver Version: 591.44 - Release Date: Thu Dec 04, 2025</p>
+                        <button class="start_search" type="button">Get Download</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section d'aide et de ressources drivers -->
+        <div class="page_sub_body">
+            <!-- Section d'aide - Driver Forum -->
+            <div class="column_left_sub">
+                <h3>Driver Forum</h3>
+                <p>Questions or issues regarding drivers? Discuss them with other GeForce users in our forum.</p>
+                <a href="#"><p>Visit Forum</p></a>
+            </div>
+
+            <!-- Section de ressources drivers -->
+            <div class="column_right_sub">
+                <h3>Game Ready Drivers Vs NVIDIA Studio Drivers</h3>
+                <p>Whether you are playing the hottest new games or working with the latest creative applications, 
+                NVIDIA drivers are custom tailored to provide the best possible experience.  
+                If you are a gamer who prioritizes day of launch support for the latest games, patches, and DLCs, 
+                choose Game Ready Drivers.  
+                If you are a content creator who prioritizes reliability for creative workflows including video editing, 
+                animation, photography, 
+                graphic design, and livestreaming, choose Studio Drivers.  Do a little bit of both?  No worries, either 
+                can support running the best games and creative apps.</p>
+            </div>
+        </div>
+
+        <!-- Pied de page pour la page actuelle -->
+        <div class="page_footer">
+            <div class="column_left">
+                <p>Products</p>
+                <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/"><p>Graphics Cards</p></a>
+                <a href="https://www.nvidia.com/en-us/geforce/gaming-laptops/"><p>Laptops</p></a>
+                <a href="https://www.nvidia.com/en-us/geforce/products/g-sync-monitors/"><p>G-SYNC Monitors</p></a>
+                <a href="https://www.nvidia.com/en-us/geforce-now/"><p>GeForce NOW Cloud Gaming</p></a>
+            </div>
+
+            <div class="column_center">
+                <p>Community & News</p>
+                <a href="https://www.nvidia.com/en-us/geforce/news/"><p>Latest News</p></a>
+                <a href="https://www.nvidia.com/en-us/geforce/forums/"><p>Community Forums</p></a>
+                <a href="https://www.nvidia.com/en-us/geforce/community-portal/"><p>Community Portal</p></a>
+                <a href="https://developer.nvidia.com/industries/game-development"><p>Developer Resources</p></a>
+            </div>
+
+            <div class="column_right">
+                <p>Support</p>
+                <a href="https://www.nvidia.com/en-us/geforce/drivers/"><p>Drivers</p></a>
+                <a href="https://marketplace.nvidia.com/en-us/account/"><p>Purchase Support</p></a>
+                <a href="https://www.nvidia.com/en-us/support/"><p>Technical Support</p></a>
+            </div>
+            
+            <div>
+            <p>Follow GeForce</p>
+                <a href="https://www.facebook.com/NVIDIAGeForce"><p></p></a>
+                <a href="https://www.instagram.com/nvidiageforce/"><p></p></a>
+                <a href="https://www.tiktok.com/@nvidiageforce"><p></p></a>
+                <a href="https://www.twitch.tv/nvidia"><p></p></a>
+                <a href="https://www.twitter.com/NVIDIAGeForce"><p></p></a>
+                <a href="https://www.youtube.com/channel/UCL-g3eGJi1omSDSz48AML-g"><p></p></a>
+            </div>
+        </div>
+    </body>
+
+    <!-- Pied de page principal -->
+    <footer>
+        <iframe src="../Footer.html" frameborder="0" width="100%" height="100px" allowfullscreen="true" scrolling="no"></iframe>
+    </footer>
+</html>
