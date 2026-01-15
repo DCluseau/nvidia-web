@@ -56,7 +56,6 @@ border-bottom: 1px rgb(182, 176, 176) solid;
 }
 .section {
     width: 426px;
-    /* background-color: rgb(96, 102, 107); */
     margin-right: 20px;
 }
 .section li {
@@ -71,11 +70,37 @@ border-bottom: 1px rgb(182, 176, 176) solid;
 .section a {
     border-radius: 25px;
     background-color: #76B900;
+    
 }
 
 /* FOLLOW GEFORCE */
 
-.follow_geforce h4 {
+.follow_geforce {
+color: #acadab;
 display: flex;
-background-color: red;
+margin-left: 60%;
+width: fit-content;
+height: fit-content;
+font-size:33px;
+}
+
+.follow_geforce h4 {
+    font-size:20px;
+    width: fit-content;
+    margin: auto;
+    margin-right: 30px;
+}
+
+.follow_geforce a {
+    
+    color: #acadab;
+    padding-right: 7px;
+    text-decoration: none;
+}
+
+.follow_geforce a:hover {
+    color: aliceblue;
+    padding-right: 7px;
+    text-decoration: none;
+
 }
