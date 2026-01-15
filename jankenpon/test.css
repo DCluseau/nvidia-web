@@ -1,0 +1,7 @@
+
+  img {
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    animation: 3s ease-in 1s 2 reverse both paused slide-in;
+  }
