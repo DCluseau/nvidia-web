@@ -1,71 +1,75 @@
-body{
-    background-color:black;
-    color: aliceblue;
-    font-family: NVIDIA-EMEA, Arial, Helvetica, Sans-Serif;;
+:root {
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: NVIDIA-EMEA, Arial, Helvetica, Sans-Serif;
 }
 
-h2,h1,.liens_rapides.div,a{
+h2,
+h1,
+.liens_rapides.div,
+a {
   display: grid;
   place-items: center;
   color: aliceblue;
   font-size: 36px;
-
+  text-underline-offset: 10px;
 }
-.liens_rapides.div{
-    width: 426px;
-    height: 250px;
-    padding: 15px, 0px ;
+a:hover {
+  text-decoration-color: #76b900;
+}
+.liens_rapides.div {
+  width: 426px;
+  height: 250px;
+  padding: 15px, 0px;
 }
 
 .img_link {
-    padding: 15px;
+  padding: 15px;
 }
 
-p{
-font-size: 15px;
-text-align: center;
-padding: 10px;
-padding-bottom: 50px;
-
+p {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 50px;
 }
-.green_title, .section li {
-    color: #76B900;
+.green_title,
+.section li {
+  color: #76b900;
 }
-
 
 .liens_rapides {
-display: flex;
-margin-left: 200px;
-margin-right: 200px;
-border-bottom: 1px rgb(182, 176, 176) solid;
-
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-bottom: 1px rgb(182, 176, 176) solid;
 }
 
 .assistance_geforce {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 /* INFO BOTTOM */
 
 .info_bottom {
-    display: flex;
-    margin-left: 200px;
-    margin-right: 200px;
-    
-
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 .section {
     width: 426px;
     margin-right: 20px;
 }
 .section li {
-    list-style-type: none;
-    padding: 5px;
-    margin-left: -40px;
-
+  list-style-type: none;
+  padding: 5px;
+  margin-left: -40px;
 }
 .section_title {
-    border-bottom: #acadab solid 1px;
+  border-bottom: #acadab solid 1px;
 }
 .section a {
     border-radius: 25px;
@@ -103,4 +107,34 @@ font-size:33px;
     padding-right: 7px;
     text-decoration: none;
 
+}
+
+.games {
+  width: 1024px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: NVIDIA-EMEA, Arial, Helvetica, Sans-Serif;
+}
+
+.games a {
+  font-size: 2em;
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+}
+
+div.logo {
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.ctn_logo {
+  margin-top: -20vh;
 }

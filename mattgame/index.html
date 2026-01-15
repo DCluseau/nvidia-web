@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu : Appuie au bon moment !</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-[#0A0A0A] text-white min-h-screen flex flex-col items-center justify-center p-4"
+  >
+    <h1 class="text-2xl mb-4">
+      Jeu : Appuie toutes les 8 secondes (ni trop tôt, ni trop tard) !
+    </h1>
+
+    <div class="mb-4">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ez8m4PXksQs?si=VUXSKoIIAzIvOIqt"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <button
+      id="actionButton"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
+    >
+      Démarrer
+    </button>
+
+    <div id="timer" class="text-center text-lg">
+      Temps: 00:00:00 <br />
+      Score: 0
+    </div>
+    <div id="result" class="text-center text-2xl font-bold mt-4"></div>
+    <div id="countdown" class="text-center text-xl mt-2">Prêt ?</div>
+
+    <script>
+      const actionButton = document.getElementById("actionButton");
+      const timerElement = document.getElementById("timer");
+      const resultElement = document.getElementById("result");
+      const countdownElement = document.getElementById("countdown");
+
+      let seconds = 0;
+      let minutes = 0;
+      let hours = 0;
+      let score = 0;
+      let timer;
+      let countdown;
+      let timeLeft = 8;
+      let isGameRunning = false;
+      let canPress = false;
+      let tolerance = 1; // Marge de tolérance d'1 seconde avant/après
+
+      actionButton.addEventListener("click", () => {
+        if (!isGameRunning) {
+          startGame();
+          actionButton.textContent = "Appuie !";
+          isGameRunning = true;
+        } else {
+          if (canPress) {
+            resetCountdown();
+            score++;
+            updateDisplay();
+            actionButton.textContent = "Attends...";
+          } else {
+            endGame("Trop tôt !");
+          }
+        }
+      });
+
+      function startGame() {
+        resultElement.textContent = "";
+        countdownElement.textContent = "Prêt ?";
+        timer = setInterval(updateTimer, 1000);
+        startCountdown();
+      }
+
+      function updateTimer() {
+        seconds++;
+        if (seconds === 60) {
+          minutes++;
+          seconds = 0;
+          if (minutes === 60) {
+            hours++;
+            minutes = 0;
+          }
+        }
+        updateDisplay();
+      }
+
+      function startCountdown() {
+        clearInterval(countdown);
+        timeLeft = 8;
+        canPress = false;
+        countdownElement.textContent = `Temps restant : ${timeLeft}`;
+        countdown = setInterval(() => {
+          timeLeft--;
+          countdownElement.textContent = `Temps restant : ${timeLeft}`;
+          if (timeLeft <= tolerance) {
+            canPress = true;
+            actionButton.textContent = "Appuie maintenant !";
+          }
+          if (timeLeft <= 0) {
+            endGame("Trop tard !");
+          }
+        }, 1000);
+      }
+
+      function resetCountdown() {
+        clearInterval(countdown);
+        startCountdown();
+      }
+
+      function endGame(message) {
+        clearInterval(timer);
+        clearInterval(countdown);
+        isGameRunning = false;
+        resultElement.textContent = `Perdu ! ${message}`;
+        actionButton.textContent = "Recommencer";
+        countdownElement.textContent = "Game Over";
+      }
+
+      function updateDisplay() {
+        timerElement.innerHTML = `
+          Temps: ${hours.toString().padStart(2, "0")}:${minutes
+          .toString()
+          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")} <br>
+          Score: ${score}
+        `;
+      }
+    </script>
+  </body>
+</html>
