@@ -1,0 +1,43 @@
+<canvas id="canvas"></canvas>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  canvas {
+    display: block;
+  }
+
+  #hud {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  z-index: 10;
+  }
+</style>
+<div id="hud" style="color:blue; font-size:30px;">
+  <div id="score">Score : 0</div>
+  <div id="life">Vie : 10</div>
+  <div id="shoot">Tir restant : 0</div>
+</div>
+<div id="gameover"
+     style="
+       display:none;
+       position:absolute;
+       top:40%;
+       width:100%;
+       text-align:center;
+       font-size:60px;
+       color:red;
+       font-family:Arial;
+     ">
+  GAME OVER
+</div>
+<script type="module" src="./main.js" charset="utf-8"></script>
