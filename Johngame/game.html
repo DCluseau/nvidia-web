@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Jeu de clic</title>
+
+<style>
+  body {
+    height:100vh;
+    margin:0;
+    font-family:sans-serif;
+    overflow:hidden;
+    background:black;
+  }
+
+  /* Animation Matrix */
+  body::before {
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        rgba(0,255,0,0.15) 0px,
+        rgba(0,255,0,0.15) 2px,
+        transparent 2px,
+        transparent 20px
+      );
+    animation: matrix 2s linear infinite;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  @keyframes matrix {
+    from { background-position: 0 0; }
+    to { background-position: 0 40px; }
+  }
+
+  h1 {
+    text-align:center;
+    color:#00ff99;
+    margin:10px 0;
+    letter-spacing:3px;
+  }
+
+  #controls {
+    text-align:center;
+    margin-bottom:10px;
+  }
+
+  button {
+    padding:8px 15px;
+    margin:5px;
+    font-size:16px;
+    cursor:pointer;
+  }
+
+  #score {
+    color:white;
+  }
+
+  #box {
+    width:60px;
+    height:60px;
+    position:fixed;
+    cursor:pointer;
+    transition:transform 0.2s;
+    border-radius:8px;
+    z-index:2;
+  }
+
+  .pop {
+    transform:scale(1.3);
+  }
+
+  strong { color: white; }
+</style>
+</head>
+
+<body>
+
+<h1>ATTRAPE LE CARRE</h1>
+
+<div id="controls">
+  <strong>Score : <span id="score">0</span></strong><br>
+  <button onclick="startGame()">Start</button>
+  <button onclick="stopGame()">Stop</button>
+  <button onclick="resetGame()">Reset</button>
+</div>
+
+<div id="box" style="display:none"></div>
+
+<script>
+let score = 0;
+let speed = 1000;
+let interval = null;
+
+const box = document.getElementById("box");
+const scoreEl = document.getElementById("score");
+
+function randomColor() {
+  return `hsl(${Math.random()*360},100%,50%)`;
+}
+
+function moveBox() {
+  box.style.background = randomColor();
+  box.style.top = Math.random() * (innerHeight - 80) + "px";
+  box.style.left = Math.random() * (innerWidth - 60) + "px";
+}
+
+function startGame() {
+  if (interval) return;
+  box.style.display = "block";
+  moveBox();
+  interval = setInterval(moveBox, speed);
+}
+
+function stopGame() {
+  clearInterval(interval);
+  interval = null;
+  box.style.display = "none";
+}
+
+function resetGame() {
+  stopGame();
+  score = 0;
+  speed = 1000;
+  scoreEl.textContent = score;
+}
+
+box.onclick = () => {
+  score++;
+  speed *= 0.95;
+  scoreEl.textContent = score;
+
+  box.style.background = randomColor();
+
+  box.classList.add("pop");
+  setTimeout(() => box.classList.remove("pop"), 200);
+
+  moveBox();
+};
+</script>
+
+</body>
+</html>
