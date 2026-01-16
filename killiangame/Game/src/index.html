@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Game CSS Project</title>
+</head>
+<body class="bg-green-300">
+    <div class="bg-blue-500 text-white text-center py-4">
+        <h1 class="text-4xl font-bold">Game</h1>
+        <p class="mt-4" id="title">Tailwing CSS game.</p>
+    </div>
+    <div class="flex justify-center items-center py-16">
+        <div class="flex justify-center items-center bg-white rounded-4xl w-72 h-108">
+            <div class="relative w-64 h-100" id="screen">
+                <div class="bg-indigo-950 rounded-3xl flex justify-center items-center w-1/1 h-1/1 top-0 left-0 absolute">
+                    <div class="bg-slate-900 rounded-4xl w-3/4 h-6 mt-30" id="slider"></div>
+                </div>
+                <canvas class="block top-0 left-0 z-10 absolute" id="canvas" width="256" height="400"></canvas>
+                <p class="absolute text-center top-1/20 w-1/1 z-10 text-white text-5xl" id="score">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js" onload="startGame()"></script>
+</body>
+</html>
